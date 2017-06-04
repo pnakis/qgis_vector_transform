@@ -1,9 +1,9 @@
-Author: Nakis Panagiotis
-Email : pnakis@hotmail.com
-Date : June 2017
-Repository: https://github.com/pnakis/qgis_vector_transform
-Tools used: Plugin Builder by GeoApt LLC
-            Qt Designer by The Qt Company
+Author: Nakis Panagiotis<br />
+Email : pnakis@hotmail.com<br />
+Date : June 2017<br />
+Repository: https://github.com/pnakis/qgis_vector_transform<br />
+Tools used: Plugin Builder by GeoApt LLC<br />
+            Qt Designer by The Qt Company<br />
 
 LICENSE:
 This program is free software; you can redistribute it and/or modify
@@ -36,50 +36,50 @@ It supports layer geometry types of: Points, MultiPoits, Lines, MultiLines, Poly
 Transformation included in the plygin: 
 1) Translation 
 
-x' = x + Tx
-y' = y + Tx
+x' = x + Tx<br />
+y' = y + Tx<br />
 
 2) Rotation 
 
-x' = cos(rx)*x + sin(ry)*y
-y' = -sin(rx)*x + cos(ry)*y
+x' = cos(rx)*x + sin(ry)*y<br />
+y' = -sin(rx)*x + cos(ry)*y<br />
 
 3) Scale
 
-x' = x*sx
-y' = y*sy
+x' = x*sx<br />
+y' = y*sy<br />
 
 4) Similarity
 
-x' = cos(r)*s*x + sin(r)*s*y + Tx
-y' = -sin(r)*s*x + cos(r)*s*y + Ty
+x' = cos(r)*s*x + sin(r)*s*y + Tx<br />
+y' = -sin(r)*s*x + cos(r)*s*y + Ty<br />
 
 5) Affine 
 
-a = sx*(cos(r) + d*sin(r))
-b = sy*sin(r)
-c = sx*(-sin(r) + d*cos(r))
-d = sy*cos(r)
+a = sx*(cos(r) + d*sin(r))<br />
+b = sy*sin(r)<br />
+c = sx*(-sin(r) + d*cos(r))<br />
+d = sy*cos(r)<br />
 
-x' = a*x + b*y + Tx
-y' = c*x + d*y + Ty
+x' = a*x + b*y + Tx<br />
+y' = c*x + d*y + Ty<br />
 
 6) Affine (with known coefficients)
 
-x' = a1*x + b1*y + c1
-y' = a2*x + b2*y + c2
+x' = a1*x + b1*y + c1<br />
+y' = a2*x + b2*y + c2<br />
 
 7) Projective
 
-x' = (a1*x + b1*y + c1) / (a0*x + b0*y + 1)
-y' = (a2*x + b2*y + c2) / (a0*x + b0*y + 1)
+x' = (a1*x + b1*y + c1) / (a0*x + b0*y + 1)<br />
+y' = (a2*x + b2*y + c2) / (a0*x + b0*y + 1)<br />
 
 where:
-x',y' are the new and 
-x,y are the input coordinates
-Tx, Ty are the axis translation parameters
-sx, sy are the axis scale parameters and 
-s the global scale parameter
-rx, ry are the axis rotation parameters and
-r the global rotation parameter
-delta is the axis perpenticularity parameter
+x',y' are the new and <br />
+x,y are the input coordinates<br />
+Tx, Ty are the axis translation parameters<br />
+sx, sy are the axis scale parameters and <br />
+s the global scale parameter<br />
+rx, ry are the axis rotation parameters and<br />
+r the global rotation parameter<br />
+delta is the axis perpenticularity parameter<br />
