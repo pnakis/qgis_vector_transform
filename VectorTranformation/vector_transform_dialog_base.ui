@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VectorTransformationDialogBase</class>
+ <widget class="QDialog" name="VectorTransformationDialogBase">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>312</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Vector Transformation</string>
+  </property>
+  <widget class="QDialogButtonBox" name="button_box">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>360</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+   <property name="centerButtons">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_sel_layer">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>31</y>
+     <width>59</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select layer</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxLayers">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>31</y>
+     <width>194</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>319</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_x_t">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>106</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>-10000000000000000000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000000000000000000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_y_t">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>106</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>-10000000000000000000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000000000000000000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_y_r">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>157</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>-10000000000000000000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000000000000000000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_x_r">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>157</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>-10000000000000000000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000000000000000000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_x_s">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>208</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>-10000000000000000000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000000000000000000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_y_s">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>208</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>-10000000000000000000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000000000000000000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_ax_th">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>259</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>-10000000000000000000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000000000000000000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxTransf">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>57</y>
+     <width>194</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_trans_list">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>57</y>
+     <width>73</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Transformation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_x_tra">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>87</y>
+     <width>62</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X Translation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_y_tra">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>87</y>
+     <width>62</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Y Translation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_y_rot">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>138</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Y Rotation (Degrees)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_x_rot">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>138</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X Rotation (Degrees)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_x_sca">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>189</y>
+     <width>34</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X Scale</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_y_sca">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>189</y>
+     <width>34</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Y Scale</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_axis_ang">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Axis Angle (Degrees)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Save">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>318</y>
+     <width>31</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_b0">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>259</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>-10000000000000000000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>10000000000000000000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_b0">
+   <property name="geometry">
+    <rect>
+     <x>161</x>
+     <y>240</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>b0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_save_loc">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Output file</string>
+   </property>
+  </widget>
+  <zorder>button_box</zorder>
+  <zorder>label_sel_layer</zorder>
+  <zorder>comboBoxLayers</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>pushButton_Save</zorder>
+  <zorder>doubleSpinBox_x_t</zorder>
+  <zorder>doubleSpinBox_y_t</zorder>
+  <zorder>doubleSpinBox_y_r</zorder>
+  <zorder>doubleSpinBox_x_r</zorder>
+  <zorder>doubleSpinBox_x_s</zorder>
+  <zorder>doubleSpinBox_y_s</zorder>
+  <zorder>doubleSpinBox_ax_th</zorder>
+  <zorder>comboBoxTransf</zorder>
+  <zorder>label_trans_list</zorder>
+  <zorder>label_x_tra</zorder>
+  <zorder>label_y_tra</zorder>
+  <zorder>label_y_rot</zorder>
+  <zorder>label_x_rot</zorder>
+  <zorder>label_x_sca</zorder>
+  <zorder>label_y_sca</zorder>
+  <zorder>label_axis_ang</zorder>
+  <zorder>doubleSpinBox_b0</zorder>
+  <zorder>label_b0</zorder>
+  <zorder>label_save_loc</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>comboBoxLayers</tabstop>
+  <tabstop>comboBoxTransf</tabstop>
+  <tabstop>doubleSpinBox_x_t</tabstop>
+  <tabstop>doubleSpinBox_y_t</tabstop>
+  <tabstop>doubleSpinBox_x_r</tabstop>
+  <tabstop>doubleSpinBox_y_r</tabstop>
+  <tabstop>doubleSpinBox_x_s</tabstop>
+  <tabstop>doubleSpinBox_y_s</tabstop>
+  <tabstop>doubleSpinBox_ax_th</tabstop>
+  <tabstop>lineEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>VectorTransformationDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>VectorTransformationDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

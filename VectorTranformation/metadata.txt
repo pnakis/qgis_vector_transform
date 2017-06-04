@@ -1,0 +1,39 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Vector Transformation
+qgisMinimumVersion=2.0
+description=This plugin applies transformations on vector layers.
+version=1.0
+author=Panagiotis Nakis
+email=pnakis@hotmail.com
+
+about=This plugin applies transformation on vector layers and saves the new geometry in a new shapefile along with the old layer attributes. Transformation included in the plygin: 1) Translation 2) Rotation 3) Scale 4) Similarity 5) Affine 6) Affine (with known coefficients) 7) Projective
+
+tracker=https://github.com/pnakis/qgis_vector_transform/issues
+repository=https://github.com/pnakis/qgis_vector_transform
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=vector, transformation, translation, rotation, scale, similarity, affine, projective
+
+homepage=https://github.com/pnakis/qgis_vector_transform
+category=Vector
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
