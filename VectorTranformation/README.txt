@@ -33,6 +33,16 @@ course "Programming & Geospatial Applications".
 
 This plugin applies transformations on vector layers and saves the new geometry in a new shapefile along with the old layer attributes.
 It supports layer geometry types of: Points, MultiPoits, Lines, MultiLines, Polygons and MultiPolygons.
+
+USAGE:
+
+1) Load Layers in QGIS
+2) Run the plugin
+3) Choose transformation from the list
+4) Enter variables
+5) Select output shapefile location (DO NOT OVERWRITE EXISTING SHAPEFILE)
+6) Press OK to run the module
+
 Transformation included in the plygin: 
 1) Translation 
 
