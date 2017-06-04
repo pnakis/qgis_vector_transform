@@ -27,7 +27,7 @@ Plugins > Installed > Vector Transformation
 
 
 ABOUT:
-This plugin was created during my Masters Programme at the Technologican Educational Institute of Athens,
+This plugin was created during my Masters Programme at the Technological Educational Institute of Athens,
 department of Surveying & Geoinformatics Engineering with the title "Geospatial Technologies" for the 
 course "Programming & Geospatial Applications".
 
