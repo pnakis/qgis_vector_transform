@@ -35,7 +35,6 @@ This plugin applies transformations on vector layers and saves the new geometry 
 It supports layer geometry types of: Points, MultiPoits, Lines, MultiLines, Polygons and MultiPolygons.
 
 USAGE:
-
 1) Load Layers in QGIS
 2) Run the plugin
 3) Choose transformation from the list
