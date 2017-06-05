@@ -42,7 +42,7 @@ USAGE:
 5) Select output shapefile location (DO NOT OVERWRITE EXISTING SHAPEFILE)
 6) Press OK to run the module
 
-Transformation included in the plygin: 
+Transformations included in the plygin: 
 1) Translation 
 
 x' = x + Tx<br />
