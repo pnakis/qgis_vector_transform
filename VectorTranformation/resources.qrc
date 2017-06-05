@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/VectorTranformation" >
-        <file>icon.png</file>
-    </qresource>
-</RCC>
