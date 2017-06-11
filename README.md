@@ -42,7 +42,7 @@ USAGE:
 5) Select output shapefile location (DO NOT OVERWRITE EXISTING SHAPEFILE)
 6) Press OK to run the module
 
-Transformations included in the plygin: 
+Transformations included in the plugin: 
 1) Translation 
 
 x' = x + Tx<br />
@@ -55,8 +55,8 @@ y' = -sin(rx)*x + cos(ry)*y<br />
 
 3) Scale
 
-x' = x*sx<br />
-y' = y*sy<br />
+x' = x*sx <br />
+y' = y*sy 
 
 4) Similarity
 
