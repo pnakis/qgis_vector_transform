@@ -50,8 +50,8 @@ y' = y + Tx<br />
 
 2) Rotation 
 
-x' = cos(rx)*x + sin(ry)*y<br />
-y' = -sin(rx)*x + cos(ry)*y<br />
+x' = cos(rx) * x + sin(ry) * y<br />
+y' = -sin(rx) * x + cos(ry) * y<br />
 
 3) Scale
 
@@ -60,28 +60,28 @@ y' = y * sy
 
 4) Similarity
 
-x' = cos(r)*s*x + sin(r)*s*y + Tx<br />
-y' = -sin(r)*s*x + cos(r)*s*y + Ty<br />
+x' = cos(r) * s * x + sin(r) * s * y + Tx<br />
+y' = -sin(r) * s * x + cos(r) * s * y + Ty<br />
 
 5) Affine 
 
-a = sx*(cos(r) + d*sin(r))<br />
-b = sy*sin(r)<br />
-c = sx*(-sin(r) + d*cos(r))<br />
-d = sy*cos(r)<br />
+a = sx * (cos(r) + d * sin(r))<br />
+b = sy * sin(r)<br />
+c = sx * (-sin(r) + d * cos(r))<br />
+d = sy * cos(r)<br />
 
-x' = a*x + b*y + Tx<br />
-y' = c*x + d*y + Ty<br />
+x' = a * x + b * y + Tx<br />
+y' = c * x + d * y + Ty<br />
 
 6) Affine (with known coefficients)
 
-x' = a1*x + b1*y + c1<br />
-y' = a2*x + b2*y + c2<br />
+x' = a1 * x + b1 * y + c1<br />
+y' = a2 * x + b2 * y + c2<br />
 
 7) Projective
 
-x' = (a1*x + b1*y + c1) / (a0*x + b0*y + 1)<br />
-y' = (a2*x + b2*y + c2) / (a0*x + b0*y + 1)<br />
+x' = (a1 * x + b1 * y + c1) / (a0 * x + b0 * y + 1)<br />
+y' = (a2 * x + b2 * y + c2) / (a0 * x + b0 * y + 1)<br />
 
 where:
 x',y' are the new and <br />
