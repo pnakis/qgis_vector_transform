@@ -55,8 +55,8 @@ y' = -sin(rx)*x + cos(ry)*y<br />
 
 3) Scale
 
-x' = x*sx <br />
-y' = y*sy 
+x' = x * sx <br />
+y' = y * sy 
 
 4) Similarity
 
