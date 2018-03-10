@@ -21,7 +21,7 @@ Place the entire folder VectorTransformation inside the directory:
 
 C:\Users\{Your Username}\.qgis2\python\plugins\
 
-and load the plugin for the QGIS program:
+and load the plugin from the QGIS environment:
 
 Plugins > Installed > Vector Transformation
 
